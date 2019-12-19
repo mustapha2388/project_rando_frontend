@@ -15,8 +15,6 @@ export class LeafletMapExampleComponent implements OnInit {
 
   initMap() {
     // @dress: 9 Rue de la Cité, 75004 Paris, France
-    // Latitude: 48.85486103480089
-    // Longitude: 2.347855567932129
 
     const longitude = 48.85486103480089;
     const latitude = 2.347855567932129;
