@@ -25,8 +25,7 @@
             ],
             "styles": [
               "src/styles.css",
-              "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "./node_modules/leaflet/dist/leaflet.css"
+              "./node_modules/bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": []
           },
@@ -122,6 +121,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "project-rando-frontend"
 }
