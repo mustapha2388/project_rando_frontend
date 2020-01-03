@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 // import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { FormsModule } from '@angular/forms';
+import { HikeListeComponent } from './components/hike-liste/hike-liste.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HikeListeComponent
   ],
   imports: [
-    FontAwesomeModule
+    FontAwesomeModule,
     BrowserModule,
     HttpClientModule,
     FormsModule
