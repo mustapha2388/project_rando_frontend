@@ -32,7 +32,9 @@ export class HikeRepositoryService {
                                   .set('size', '' + this.sizePage);
     this.http.get<Page<Hike>>(this.serviceUrl, {params: urlParams})
               .subscribe(jsonHike => {
+                console.log('In hike repository');
                 console.log(jsonHike.content);
+                console.log('--------');
                 this.hikeSubject.next(jsonHike);
               });
    }

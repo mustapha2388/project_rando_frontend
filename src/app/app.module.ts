@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { PaginationModule } from 'ngx-bootstrap/pagination';
+// import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -14,7 +14,6 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     HttpClientModule,
-    PaginationModule,
     FormsModule
   ],
   providers: [HikeRepositoryService],
