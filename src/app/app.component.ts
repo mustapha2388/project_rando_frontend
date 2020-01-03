@@ -1,3 +1,4 @@
+import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { HikeRepositoryService } from './services/hike-repository.service';
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
@@ -11,6 +12,7 @@ import { Page } from './models/page';
 })
 export class AppComponent implements OnInit {
   title = 'project-rando-frontend';
+  faEye = faEye;
 
   hikes: Page<Hike>;
   private hikeSubscription: Subscription;
