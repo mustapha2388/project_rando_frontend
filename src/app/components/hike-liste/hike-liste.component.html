@@ -3,13 +3,13 @@
     <div class="col-sm">
       <div class="card" style="width: 18rem;">
         <div class="card-header">
-          Ajouté par {{hike.organizer}}
+          Add by {{hike.organizer}}
         </div>
         <img class="card-img-bottom" src="http://www.zelda-source.com/img/news/zeldamariokart/003.png" alt="image Hike">
         <div class="card-body">
           <h5 class="card-title">{{hike.name}}</h5>
           <p class="card-text">{{hike.description}}</p>
-          <a href="#" class="btn btn-primary"><fa-icon [icon]="faEye"></fa-icon></a>
+          <a routerLink='/hike-detail' class="btn btn-primary"><fa-icon [icon]="faEye"></fa-icon></a>
         </div>
         <div class="card-footer text-muted">
           2 days ago
