@@ -10,6 +10,8 @@
           <h5 class="card-title">{{hike.name}}</h5>
           <p class="card-text">{{hike.description}}</p>
           <a [routerLink]="['/hikes/hike-detail/',hike.id]" class="btn btn-primary"><fa-icon [icon]="faEye"></fa-icon></a>
+          <a [routerLink]="['/hikes/hike-edit/',hike.id]" class="btn btn-success"><fa-icon [icon]="faEdit"></fa-icon></a>
+
         </div>
         <div class="card-footer text-muted">
           2 days ago

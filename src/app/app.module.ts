@@ -10,13 +10,15 @@ import { FormsModule } from '@angular/forms';
 import { HikeListeComponent } from './components/hike-liste/hike-liste.component';
 import {AppRoutingModule} from './app-routing/app-routing.module';
 import { HikeDetailComponent } from './components/hike-detail/hike-detail.component';
+import { HikeEditComponent } from './components/hike-edit/hike-edit.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HikeListeComponent,
-    HikeDetailComponent
+    HikeDetailComponent,
+    HikeEditComponent
   ],
   imports: [
     FontAwesomeModule,
