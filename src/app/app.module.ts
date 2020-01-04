@@ -8,6 +8,8 @@ import { HttpClientModule } from '@angular/common/http';
 // import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { FormsModule } from '@angular/forms';
 import { HikeListeComponent } from './components/hike-liste/hike-liste.component';
+import {AppRoutingModule} from './app-routing/app-routing.module';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { HikeListeComponent } from './components/hike-liste/hike-liste.component
     FontAwesomeModule,
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [HikeRepositoryService],
   bootstrap: [AppComponent]
