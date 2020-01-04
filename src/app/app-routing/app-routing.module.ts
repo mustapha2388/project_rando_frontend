@@ -8,7 +8,7 @@ import {HikeDetailComponent} from '../components/hike-detail/hike-detail.compone
 export const ROUTES: Routes = [
   {path: '', redirectTo: 'hikes', pathMatch: 'full'},
   {path: 'hikes', component: HikeListeComponent},
-  {path: 'hike-detail', component: HikeDetailComponent}
+  {path: 'hikes/hike-detail/:id', component: HikeDetailComponent}
 ];
 
 @NgModule({

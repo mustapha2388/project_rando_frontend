@@ -1,2 +1,16 @@
-<p>hike-detail works!</p>
-<button class="btn btn-warning" (click)="onBack()">back</button>
+<div class="container">
+  <p>hike-detail works!</p>
+  <div class="card">
+    <div class="card-header text-center">
+      <h2>{{hike.name}}</h2>
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <p style="font-size: small; font-style: italic">will take place: {{hike.hikeDate | date: 'short'}}</p>
+        <p>{{hike.description}}</p>
+      </blockquote>
+    </div>
+    <div class="card-footer font-italic small font-weight-bolder" >by : {{hike.organizer}}, {{hike.creationDate | date:'dd/M/yyyy'}}</div>
+  </div>
+  <button class="btn btn-warning" (click)="onBack()">back</button>
+</div>
