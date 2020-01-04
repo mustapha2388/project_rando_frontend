@@ -44,4 +44,9 @@ export class HikeRepositoryService {
     return this.http.get<Hike>(url).toPromise();
    }
 
+   public updateHike(hike: Hike): Promise<Hike> {
+     return this.http.put<Hike>(this.serviceUrl, hike)
+       .toPromise();
+   }
+
 }

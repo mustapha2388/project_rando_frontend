@@ -1,1 +1,15 @@
-<p>hike-edit works!</p>
+<form class="form" (ngSubmit)="saveHike()" *ngIf="editHike">
+  <div class="form-group">
+    <label for="nom">name:</label>
+    <input type="text" name="nom" class="form-control" id="nom"  placeholder="nom ..." [(ngModel)]="editHike.name">
+  </div>
+
+  <div class="form-group">
+    <label for="description">Description:</label>
+    <textarea class="form-control" id="description"  name="description" rows="3" placeholder="description ..."  [(ngModel)]="editHike.description"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-info">Submit</button>
+  <button class="btn btn-warning" (click)="onCancel()">Cancel</button>
+</form>
+
