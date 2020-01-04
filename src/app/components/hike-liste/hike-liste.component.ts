@@ -3,7 +3,7 @@ import {Page} from '../../models/page';
 import {Hike} from '../../models/hike';
 import {Subscription} from 'rxjs';
 import {HikeRepositoryService} from '../../services/hike-repository.service';
-import { faEye } from '@fortawesome/free-solid-svg-icons';
+import { faEye, faEdit} from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -14,6 +14,7 @@ import { faEye } from '@fortawesome/free-solid-svg-icons';
 export class HikeListeComponent implements OnInit {
 
   faEye = faEye;
+  faEdit = faEdit;
 
   hikes: Page<Hike>;
   private hikeSubscription: Subscription;
