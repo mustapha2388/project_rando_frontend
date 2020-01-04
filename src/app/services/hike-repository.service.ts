@@ -39,4 +39,9 @@ export class HikeRepositoryService {
               });
    }
 
+   public getHikeById(id: number): Promise<Hike> {
+    const url = this.serviceUrl + '/hike-detail/' + id;
+    return this.http.get<Hike>(url).toPromise();
+   }
+
 }
