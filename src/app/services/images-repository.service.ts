@@ -11,4 +11,8 @@ export class ImagesRepositoryService {
   public getThumbnailUrl(id: number) {
     return `${this.serviceUrl}/${id}/thumbdata`;
   }
+
+  public getImageUrl(id: number){
+    return `${this.serviceUrl}/${id}/data`;
+  }
 }
