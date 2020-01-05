@@ -5,6 +5,19 @@
       <h2>{{hike.name}}</h2>
     </div>
     <div class="card-body">
+      <!------------------>
+      <ngb-carousel >
+        <ng-template ngbSlide *ngFor="let img of hike.images; let index = index">
+          <div class="picsum-img-wrapper">
+            <img [src]="getImgCarouselById(hike, index)" [alt]="img.name">
+          </div>
+          <div class="carousel-caption">
+            <h3>{{img.name}}</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </ng-template>
+      </ngb-carousel>
+      <!------->
       <blockquote class="blockquote mb-0">
         <p style="font-size: small; font-style: italic">will take place: {{hike.hikeDate | date: 'short'}}</p>
         <p>{{hike.description}}</p>

@@ -11,6 +11,8 @@ import { HikeListeComponent } from './components/hike-liste/hike-liste.component
 import {AppRoutingModule} from './app-routing/app-routing.module';
 import { HikeDetailComponent } from './components/hike-detail/hike-detail.component';
 import { HikeEditComponent } from './components/hike-edit/hike-edit.component';
+import { NgbCarouselModule} from '@ng-bootstrap/ng-bootstrap';
+
 
 
 @NgModule({
@@ -18,14 +20,15 @@ import { HikeEditComponent } from './components/hike-edit/hike-edit.component';
     AppComponent,
     HikeListeComponent,
     HikeDetailComponent,
-    HikeEditComponent
+    HikeEditComponent,
   ],
   imports: [
     FontAwesomeModule,
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbCarouselModule
   ],
   providers: [HikeRepositoryService],
   bootstrap: [AppComponent]
