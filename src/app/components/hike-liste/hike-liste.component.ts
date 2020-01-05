@@ -4,6 +4,7 @@ import {Hike} from '../../models/hike';
 import {Subscription} from 'rxjs';
 import {HikeRepositoryService} from '../../services/hike-repository.service';
 import { faEye, faEdit} from '@fortawesome/free-solid-svg-icons';
+import {ImagesRepositoryService} from '../../services/images-repository.service';
 
 
 @Component({
@@ -21,7 +22,8 @@ export class HikeListeComponent implements OnInit {
 
   noPage: number;
   sizePage: number;
-  constructor( private hikeRepositoryService: HikeRepositoryService) {}
+  constructor( private hikeRepositoryService: HikeRepositoryService,
+               private imagesService: ImagesRepositoryService) {}
 
   ngOnInit() {
     this.hikes = Page.emptyPage<Hike>();
@@ -33,6 +35,14 @@ export class HikeListeComponent implements OnInit {
         this.hikes = reqJson;
       });
     this.hikeRepositoryService.getHikes();
+  }
+
+  public getThumbnailHike(hike: Hike) {
+    if (hike.images == null || hike.images.length === 0) {
+      return 'assets/images/no_image_available.png';
+    } else {
+      return this.imagesService.getThumbnailUrl(hike.images[0].id);
+    }
   }
 
 }

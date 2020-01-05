@@ -5,7 +5,7 @@
         <div class="card-header">
           Add by {{hike.organizer}}
         </div>
-        <img class="card-img-bottom" src="http://www.zelda-source.com/img/news/zeldamariokart/003.png" alt="image Hike">
+        <img class="card-img-bottom" [src]="getThumbnailHike(hike)" alt="image Hike">
         <div class="card-body">
           <h5 class="card-title">{{hike.name}}</h5>
           <p class="card-text">{{hike.description}}</p>
